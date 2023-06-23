@@ -45,11 +45,16 @@
     isolation: isolate;
   }
 
+  @font-face {
+    font-family: Dosis;
+    src: url(fonts/Dosis-VariableFont_wght.ttf);
+}
+
   :root{
     --main-color: #d3d6db;
     --accent-1: #3a4750;
     --accent-2: #0f2a48;
-    --accent-3: #011603;
+    --accent-3: #08410e;
   }
 
   body {
@@ -61,11 +66,13 @@
   main {
     width: 65%;
     height: 100%;
+    padding: 8% 100px 0 100px;
   }
 
   .image-sidebar {
     width: 35%;
     height: 100%;
+    height: auto;
     position: relative;
     border-right: 2px solid black;
   }
@@ -97,6 +104,67 @@
     height: 18%;
   }
 
+  .text {
+    font-family: Dosis;
+    font-size: calc(8px + 1vw);
+    font-weight: bold;
+}
+
+.upper{
+    padding-bottom: 2%;
+}
+
+.lower {
+    padding-bottom: 4%;
+}
+
+form, .upper-form>div {
+    display: flex;
+    flex-direction: column;
+    font-family: Dosis;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+form {
+    width: 100%;
+}
+
+.upper-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20%;
+    border-bottom: 4px solid var(--accent-2);
+    margin-bottom: 5%;
+}
+
+input {
+    width: 15vw;
+    height: 1.8rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+.upper-form>div {
+    padding-bottom: 2%;
+}
+
+button {
+    background-color: var(--accent-3);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 12vw;
+    height: 4vh;
+    font-size: 1vw;
+    margin-bottom: 10px;
+}
 
 
+.lower-form>p {
+    font-size: 15px;
+}
 
+span {
+    color: var(--accent-3);
+}
