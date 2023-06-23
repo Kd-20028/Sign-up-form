@@ -145,6 +145,14 @@ input {
     border-radius: 4px;
 }
 
+input:focus {
+    outline-color: rgba(22, 104, 192, 0.62);
+}
+
+input:invalid {
+    outline-color: red;
+}
+
 .upper-form>div {
     padding-bottom: 2%;
 }
@@ -168,3 +176,8 @@ button {
 span {
     color: var(--accent-3);
 }
+
+#bckimg {
+    height: 100%;
+}
+

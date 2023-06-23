@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="image-sidebar">
-        <img src="images/kevin-cochran-CPjkWSD0RM0-unsplash.jpg" alt="">
+        <img id="bckimg"src="images/kevin-cochran-CPjkWSD0RM0-unsplash.jpg" alt="">
         <div class="logo">
             <img id="logoimg" src="images/five-thirteen-logo.png" alt="">
         </div>
@@ -40,7 +40,7 @@
 
                 <div id="number">
                     <label for="pnumber">PHONE NUMBER</label>
-                    <input type="number" id="pnumber" placeholder="000-000-0000" minlength="10">
+                    <input type="text" id="pnumber" name="phonenumber" pattern="(\d{10}([\-]\d{9})?)" placeholder="0000000000" title="Please enter a valid phone number" required>
                 </div>
 
                 <div id="psw">
